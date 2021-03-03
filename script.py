@@ -23,11 +23,11 @@ _________                       __
 
 
 # User Inputs 
-url = input("What is the web-address of the login form: ")
-uname = input("What is the username: ")
-uname_field = input("What is the name of username input field: ")
-pass_field = input("What is the name of password input field: ")
-wordlist = input("What is the location of the wordlist: ")
+url = input("Login Web-address: ")
+uname = input("Username: ")
+uname_field = input("Username input field: ")
+pass_field = input("Password input field: ")
+wordlist = input("Wordlist location: ")
 
 # Default fields 
 if uname_field == "":

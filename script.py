@@ -54,6 +54,7 @@ while True:
     }
 
     # Post login form (HTML)
+    print("Trying "+uname+" and "+pass_main)
     r = requests.post(url, data=payload)
     if r.status_code == 200:
         print(str(uname)+":"+str(pass_main)+" was successful!")

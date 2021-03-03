@@ -22,4 +22,5 @@ Run this script by `python3 PythSuite.py`
 7. I hope you will like this tool replacing memory-hog BurpSuite lmfao for HTTP-login-forms 
 
 
-I will add more feeatures, don't worry :)
+**I will add more features, don't worry :)**
+~ <3 from 0xhawwk

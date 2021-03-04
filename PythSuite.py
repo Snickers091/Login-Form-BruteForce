@@ -22,15 +22,14 @@ _________                       __
 
 # ---------------Brute-Force function in development to make code less clumsy lmfao---------------------
 
-
+'''
 # Not required rn :) 
 def brutef(user_func, pass_func, url_func, payload_func):
     r = requests.post(url_func, data=payload_func)
     print("Trying:"+str(user_func)+":"+str(pass_func)+":")
     if r.status_code == 200:
         return True
-
-
+'''
 # -------------------------------------------------------------------------------------------------------
 
 # User Inputs 
